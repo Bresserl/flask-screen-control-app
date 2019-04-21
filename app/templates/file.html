@@ -1,0 +1,19 @@
+{% extends 'manage.html' %}
+
+{% block title %}Image{% endblock %}
+
+{% block body %}
+{{super()}}
+
+<div class="col-md-4 col-md-offset-4">
+    <form autocomplete="off" class="form group" method="POST" action="" enctype="multipart/form-data">
+        <h2>File</h2>
+        <br>
+        {{ form.hidden_tag() }}
+        {{ wtf.form_field(form.file)}}
+        <br>
+        {{ wtf.form_field(form.submit)}}
+    </form>
+</div>
+
+{% endblock %}

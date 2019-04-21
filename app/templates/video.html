@@ -1,0 +1,20 @@
+{% extends 'manage.html' %}
+
+{% block title %}Video{% endblock %}
+
+{% block body %}
+{{super()}}
+
+
+<div class="col-md-4 col-md-offset-4">
+    <form autocomplete="off" class="form group" method="POST" action="">
+        {{ form.hidden_tag() }}
+        <h2>Video</h2>
+        <br>
+        {{ wtf.form_field(form.title)}}
+        {{ wtf.form_field(form.url)}}
+        <br>
+        {{ wtf.form_field(form.submit)}}
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+body{
+  background: #33325A;
+}
+header{
+
+background: #fff;
+}
+h1, h2, h3, h4, h5, h6, p, label {
+  color: #f3f3f3;
+  font-weight: normal;
+}
+
+.btn-default {
+  color: #000;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.container{
+
+margin-top: 150px;
+}

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100');
+
+html {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.7px;
+}
+
+
+body {
+    background: #f3f3f3;
+    color: #000000;
+}
+
+.navbar-default{
+  background-color: #33325A;
+  border: none;
+}
+
+.navbar {
+ border-radius: 0px;
+}
+
+.nav-tabs, .nav-tabs:hover {
+ border: none;
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+    background-color: #33325A;
+    border-color: #33325A;
+}
+.nav-tabs > li > a, .nav-tabs > li > a:hover {
+  margin: 2px;
+  line-height: 1.42857143;
+  border-radius: 0px;
+}
+
+a, a:active{
+  color: #fff;
+  text-decoration: none;
+}
+.navbar-header {
+  float: right;
+}
+
+.navbar-toggle{
+  background-color: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #33325A;
+}
+ 

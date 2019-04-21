@@ -1,0 +1,40 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %} APP {% endblock %}
+
+
+{% block head %}
+{{super()}}
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <ul class="nav nav-tabs">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                        aria-expanded="false"> Upload <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ url_for('main.upload_file')}}">File</a></li>
+                        <li><a href="{{ url_for('main.upload_video')}}">Video</a></li>
+                        <li><a href="{{ url_for('main.upload_text')}}">Text</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="{{ url_for('main.show_content')}}">View</a></li>
+                <li><a href="{{ url_for('main.logout')}}">Log out</a></li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+{% endblock %}
+
+
+{% block styles %}
+{{super()}}
+
+  
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+{% endblock %}

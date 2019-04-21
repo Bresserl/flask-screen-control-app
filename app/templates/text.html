@@ -1,0 +1,21 @@
+{% extends "manage.html" %}
+
+{% block title %}Text{% endblock %}
+
+{% block body %}
+{{super()}}
+
+<div class="col-md-4 col-md-offset-4">
+    <form autocomplete="off" class="form group" method="POST" action="" enctype="multipart/form-data">
+        <h2>Text</h2>
+        <br>
+        {{ form.hidden_tag() }}
+        {{ wtf.form_field(form.title)}}
+        {{ wtf.form_field(form.text)}}
+        <br>
+        {{ wtf.form_field(form.submit)}}
+    </form>
+    <div class = "alert alert-succes" role="alert" style="display:none;"></div>
+    <div class = "alert alert-danger" role="alert" style="display:none;"></div>
+</div>
+{% endblock %}
